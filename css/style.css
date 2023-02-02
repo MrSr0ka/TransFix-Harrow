@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  border: 1px solid orange;
+  margin-top: 0.3em;
+}
+
+.navigation {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-flow: wrap row;
+  border-bottom: 1px solid black;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+}
+.navigation img {
+  height: 100px;
+  width: auto;
+}
+
+.contactBtn {
+  height: 30px;
+  width: auto;
+  border-radius: 10px;
+  color: yellow;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.contactBtn a {
+  color: yellow;
+  text-decoration: none;
+}
+
+#linksMenu {
+  display: none;
+  background-color: rgb(245, 92, 92);
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+#linksMenu a {
+  border: 1px solid white;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  display: block;
+}
+
+a.icon {
+  display: block;
+  background-color: white;
+  border-bottom: none;
+}
+
+.landingSection {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/man-and-van-transfix-removals-courier-services-landing.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.landingSection h1 {
+  color: white;
+  font-size: 2em;
+  font-style: italic;
+  max-width: 70%;
+}
+.landingSection h3 {
+  color: white;
+  font-size: 1.5em;
+}
+
+.servicesSection {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.servicesSection h3 {
+  margin-top: -0.5em;
+}
+.servicesSection .contactBtn {
+  margin: 1em 0 2em 0;
+}
+
+.pricesSection {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: cadetblue;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/man-and-van-harrow-removals-company-moving-boxes.jpg);
+}
+.pricesSection h3 {
+  font-size: 1.5em;
+  color: white;
+}
+.pricesSection h3::after {
+  content: "";
+  display: block;
+  border: 1px solid orange;
+  margin-top: 0.3em;
+}
+.pricesSection .priceBox {
+  height: 250px;
+  width: 70%;
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 15px;
+  margin: 0 0 2em 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  box-shadow: 2px 10px 10px 2px;
+}
+.pricesSection .priceBox ul {
+  margin-top: -0.5em;
+}
+.pricesSection .priceBox ul li {
+  margin: 0.2em;
+}
+
+.sectionBoxes {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/man-and-van-transfix-removals-courier-materials-moving-boxes.jpg);
+  background-size: cover;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.sectionBoxes .contactBtn {
+  margin-top: 2em;
+}
+
+.fleetInfo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.fleetInfo p {
+  width: 60%;
+}
+.fleetInfo img {
+  height: 150px;
+  filter: drop-shadow(0.2em 0 0.75rem rgb(89, 78, 12));
+}
+.fleetInfo .contactBtn {
+  margin: -1em 0 1.5em 0;
+}
+
+.contactSection {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  background-color: rgb(255, 234, 128);
+}
+.contactSection h3 {
+  margin: -0.5em 0 0 0;
+}
+.contactSection form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+.contactSection form label, .contactSection form input, .contactSection form select, .contactSection form textarea {
+  margin: 0.3em;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+}
+.footer img {
+  height: 100px;
+  width: auto;
+  align-self: center;
+}
+.footer h2 {
+  margin-bottom: -0.5em;
+}
+.footer .phoneNo {
+  margin: -0.2em;
+}
+.footer .phoneNo a {
+  font-size: 1.5em;
+}
+.footer .emailAd {
+  font-size: 1.5em;
+}
+.footer .signatureEx4 {
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  align-self: center;
+}
+.footer .signatureEx4::before {
+  content: "";
+  display: block;
+  border: 1px solid black;
+  margin-bottom: 0.5em;
+}
+
+.houseMoving {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+.houseMoving .movingBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/man-and-van-transfix-harrow-removals-company-moving-houses-1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.houseMoving h3 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+.houseMoving p {
+  width: 80%;
+  height: auto;
+}
+
+.manAndVan {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 1em;
+}
+.manAndVan .manVanBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/man-and-van-transfix-harrow-removals-company-moving-houses-4.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.manAndVan h3 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.cleaning {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 1em;
+}
+.cleaning h3 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+.cleaning .cleaningBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/man-and-van-transfix-harrow-removals-company-moving-houses-5.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+.materials {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 1em;
+}
+.materials .materialsBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/man-and-van-transfix-harrow-removals-company-moving-houses-2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.materials img:last-child {
+  height: 250px;
+}
+
+.fleet {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+.fleet .fleetBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/man-and-van-transfix-harrow-removals-company-moving-houses-3.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.fleet .ford {
+  height: 130px;
+  width: auto;
+  margin: -1em 0 1.2em 3em;
+}
+.fleet .merc {
+  height: 120px;
+  width: auto;
+  margin: 0 0 1em 0;
+}
+.fleet .truck {
+  height: 150px;
+  width: auto;
+  margin: 0 0 2em 0;
+}
+.fleet img {
+  height: 220px;
+  width: auto;
+  filter: drop-shadow(0.2em 0 0.75rem rgb(89, 78, 12));
+  margin: 0 0 -2em 0;
+}
+.fleet .infoText {
+  margin: -0.6em 0 -0.6em 0;
+}
+.fleet .carTitle {
+  font-size: 1.75em;
+}
+
+.quote {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(255, 234, 128);
+}
+.quote .quoteBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/man-and-van-harrow-removals-company-logistics-team.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+.contactUs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+.contactUs .contactBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/man-and-van-harrow-removals-company-logistics-team.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.contactUs p {
+  width: 70%;
+}
+.contactUs form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  padding: 1em;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 234, 128);
+}
+.contactUs form label, .contactUs form input, .contactUs form select, .contactUs form textarea {
+  margin: 0.3em;
+}
+
+.aboutUsSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+.aboutUsSection p {
+  width: 70%;
+}
+.aboutUsSection img {
+  width: auto;
+  height: 300px;
+  margin-top: 1em;
+}
+.aboutUsSection h3 {
+  margin: -0.5em 0 -0.5em 0;
+}
+
+/*# sourceMappingURL=style.css.map */

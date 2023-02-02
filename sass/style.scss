@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+}
+h2::after {
+  content: '';
+  display: block;
+  border: 1px solid orange;
+  margin-top: 0.3em;
+}
+// Navigation styling
+
+.navigation  {
+width: 100%;
+height: 80px;
+background-color: rgb(255, 255, 255);
+display: flex;
+flex-flow: wrap row;
+border-bottom: 1px solid black;
+align-items: center;
+align-content: center;
+justify-content: space-evenly;
+overflow: hidden;
+position: relative;
+img {
+   height: 100px;
+   width: auto;
+}
+
+
+}
+
+.contactBtn {
+    height: 30px;
+    width: auto;
+    border-radius: 10px;
+    color: yellow;
+    background-color: black;
+   display: flex;
+   align-items: center;
+    a {
+        color: yellow;
+        text-decoration: none;
+    }
+}
+// Burger Menu Styling
+
+#linksMenu {
+    display: none;
+    background-color: rgb(245, 92, 92);
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    a{
+      border: 1px solid white;
+    }
+  }
+  
+  a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    display: block;
+
+  
+  }
+  
+  a.icon {
+    display: block;
+    background-color: white;
+    border-bottom: none;
+  }
+
+//   Landing Section
+
+.landingSection {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+      ), url(/images/man-and-van-transfix-removals-courier-services-landing.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+h1 {
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    max-width: 70%;
+
+}  
+h3 {
+    color: white;
+    font-size: 1.5em;
+}
+}
+
+// ServicesSection
+
+.servicesSection {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+  height: auto;
+
+  h3 {
+    margin-top: -0.5em;
+  }
+  .contactBtn {
+    margin: 1em 0 2em 0;
+  }
+}
+
+// prices section
+
+.pricesSection {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: cadetblue;
+    background:linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ), url(/images/man-and-van-harrow-removals-company-moving-boxes.jpg);
+    h3 {
+        font-size: 1.5em;
+        color: white;
+    }
+    h3::after {
+      content: '';
+      display: block;
+      border: 1px solid orange;
+      margin-top: 0.3em;
+    }
+    .priceBox {
+        height: 250px;
+        width: 70%;
+        background-color: white;
+        border: 2px solid gray;
+        border-radius: 15px;
+        margin: 0 0 2em 0;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        box-shadow: 2px 10px 10px 2px;
+
+       ul {
+            margin-top: -0.5em;
+            li {
+                margin: 0.2em;
+            }
+       }
+    
+    }
+}
+
+// boxes
+.sectionBoxes {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+      ), url(/images/man-and-van-transfix-removals-courier-materials-moving-boxes.jpg);
+      background-size: cover;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      .contactBtn { 
+        margin-top: 2em;
+      }
+}
+
+// fleet
+.fleetInfo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  p {
+    width: 60%;
+  }
+  img {
+    height: 150px;
+    filter: drop-shadow(0.2em 0 0.75rem rgb(89, 78, 12));
+  }
+  .contactBtn {
+    margin: -1em 0 1.5em 0;
+  }
+}
+
+// contact section
+.contactSection {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    background-color: rgb(255, 234, 128);
+    h3 {
+        margin: -0.5em 0 0 0;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em;
+        
+        label, input, select, textarea {
+            margin: 0.3em;
+        }
+    }
+}
+
+// Footer
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+
+    img {
+      height: 100px;
+      width: auto;
+      align-self: center;
+   }
+   
+ 
+    h2 {
+      margin-bottom: -0.5em;
+    }
+    .contactBtn {
+
+    }
+    .phoneNo {
+      margin: -0.2em;
+    }
+
+    .phoneNo a {
+      font-size: 1.5em;
+    }
+
+    .emailAd {
+      font-size: 1.5em;
+
+    }
+
+    .signatureEx4 {
+      color: rgb(0, 0, 0);
+      font-size: 1em;
+      align-self: center;
+    }
+
+    .signatureEx4::before {
+      content: '';
+      display: block;
+    border: 1px solid black;
+  margin-bottom: 0.5em;
+      }
+}
+
+// Services page
+ @mixin sectionDefault {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+
+
+ }
+ @mixin bgDefault {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+
+ }
+
+ .houseMoving {
+  @include sectionDefault;
+  .movingBg{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ), url(/images/man-and-van-transfix-harrow-removals-company-moving-houses-1.jpg);
+    @include bgDefault;
+  
+  }
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  p {
+    width: 80%;
+    height: auto;
+  }
+
+
+ }
+
+ .manAndVan {
+  @include sectionDefault;
+  margin-top: 1em;
+  .manVanBg {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ), url(/images/man-and-van-transfix-harrow-removals-company-moving-houses-4.jpg);
+    @include bgDefault;
+  }
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+ }
+
+ .cleaning {
+  @include sectionDefault;
+  margin-top: 1em;
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .cleaningBg {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ), url(/images/man-and-van-transfix-harrow-removals-company-moving-houses-5.jpg);
+    @include bgDefault;
+  }
+ }
+ 
+ .materials {
+  @include sectionDefault;
+  margin-top: 1em;
+  .materialsBg {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ), url(/images/man-and-van-transfix-harrow-removals-company-moving-houses-2.jpg);
+    @include bgDefault;
+  }
+
+  img:last-child {
+    height: 250px;
+  }
+ }
+ 
+ .fleet {
+  @include sectionDefault;
+  .fleetBg {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ), url(/images/man-and-van-transfix-harrow-removals-company-moving-houses-3.jpg);
+    @include bgDefault;
+  }
+  .ford {
+    height: 130px;
+    width: auto;
+    margin: -1em 0 1.2em 3em;
+  }
+  .merc {
+   height: 120px;
+   width: auto;
+   margin: 0 0 1em 0;
+  }
+  .truck {
+    height: 150px;
+    width: auto;
+    margin: 0 0 2em 0;
+  }
+  img {
+    height: 220px;
+    width: auto;
+    filter: drop-shadow(0.2em 0 0.75rem rgb(89, 78, 12));
+    margin: 0 0 -2em 0;
+  }
+
+  .infoText {
+    margin: -0.6em 0 -0.6em 0;
+  }
+  .carTitle {
+    font-size: 1.75em;
+  }
+ }
+ .quote{
+  @include sectionDefault;
+  background-color: rgb(255, 234, 128);
+  .quoteBg {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ), url(/images/man-and-van-harrow-removals-company-logistics-team.jpg);
+    @include bgDefault;
+  }
+}
+ 
+ 
+// contact page
+
+.contactUs {
+  @include sectionDefault;
+  
+  .contactBg {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ), url(/images/man-and-van-harrow-removals-company-logistics-team.jpg);
+    @include bgDefault;
+  }
+  p {
+    width: 70%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 234, 128);
+
+    label, input, select, textarea {
+        margin: 0.3em;
+    }
+ }
+}
+
+//about us page
+.aboutUsSection {
+  @include sectionDefault;
+  p {
+    width: 70%;
+  }
+  img {
+    width: auto;
+    height: 300px;
+    margin-top: 1em;
+  }
+  h3 {
+    margin: -0.5em 0 -0.5em 0;
+  }
+}
